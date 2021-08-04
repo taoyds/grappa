@@ -1,0 +1,5 @@
+pip install records==0.5.3
+pip install babel
+
+pip install matplotlib
+pip install regex

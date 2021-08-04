@@ -4,7 +4,7 @@ This directory contains code used for GraPPa experiments on Spider We employ [RA
 
 ### Data Download
 
-Download the [processed Spider data](https://drive.google.com/drive/folders/1NiHl1G_H4_MvLO6xaHLmCm5kobWGrGZ1?usp=sharing), unzip it and put them under `data/spider_roberta` dir. The data directory structure looks like the following:
+Download the [processed Spider data](https://drive.google.com/file/d/1QIM1VswEvbYhUK3mP8f3ed0ZDGrCj1SK/view?usp=sharing), unzip it and put them under `data/spider_roberta` dir. The data directory structure looks like the following:
 
 ```
 spider
@@ -33,7 +33,7 @@ Notice: use `--gpus number_of_gpus_to_use` to use GPUs in docker container.
 
 Please follow the instructions on [the official RAT-SQL README](https://github.com/microsoft/rat-sql#step-3-run-the-experiments) to train and evaluate a model on Spider.
 
-Notice you need to change `GRAPPA_PATH` in `models/spider/spider_enc.py` to use a different GraPPa checkpoint. 
+Notice: you need to change `GRAPPA_PATH` in `models/spider/spider_enc.py` to use a different [GraPPa checkpoint](https://drive.google.com/file/d/1WHTrcCqNNxSdIJCpddBApKIDFKvYscPB/view?usp=sharing).
 
 Running training:
 ``` bash
