@@ -40,7 +40,7 @@ Running training:
 python run.py train experiments/spider-bert-run.jsonnet --logdir checkpoints
 ```
 
-You can download the best [trained RAT-SQL+GraPPa checkpoint](https://drive.google.com/file/d/1f8YJ2A1l9tat8PtZ6MukTG19RH_PcT5-/view?usp=sharing), create a dir named `checkpoints/bs=8,lr=1.0e-04,bert_lr=1.0e-05,end_lr=0e0,att=1`, and put the checkpint under the new dir.
+You can download a [trained RAT-SQL+GraPPa checkpoint](https://drive.google.com/file/d/1f8YJ2A1l9tat8PtZ6MukTG19RH_PcT5-/view?usp=sharing), create a dir named `checkpoints/bs=8,lr=1.0e-04,bert_lr=1.0e-05,end_lr=0e0,att=1`, and put the checkpint under the new dir.
 
 Running inteference:
 ``` bash
