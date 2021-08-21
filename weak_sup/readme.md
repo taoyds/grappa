@@ -3,6 +3,8 @@
 ### Setup
 
     conda env create -f environment.yml
+    pip install --user -e .
+    pip install -r requirements.txt
 
 
 ### Experiments 
