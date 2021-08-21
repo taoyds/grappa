@@ -10,4 +10,4 @@
 ### Experiments 
 
 
-Please check `wikisql` and `wtq` for instructions.
+Please check `wikisql_roberta` and `wtq_roberta` for instructions.
