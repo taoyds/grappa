@@ -1,0 +1,22 @@
+str -> #PH#
+Number -> #PH#
+Column -> #PH#
+@start@ -> Number
+List[Row] -> #PH#
+StringColumn -> #PH#
+NumberColumn -> #PH#
+@start@ -> List[str]
+<List[Row]:Number> -> count
+<List[Row],Column:List[str]> -> select
+<List[Row],NumberColumn:Number> -> sum
+<List[Row],NumberColumn:Number> -> min
+<List[Row],NumberColumn:Number> -> max
+Number -> [<List[Row]:Number>, List[Row]]
+<List[Row],NumberColumn:Number> -> average
+<List[Row],List[Row]:List[Row]> -> conjunction
+<List[Row],StringColumn,str:List[Row]> -> filter_in
+List[str] -> [<List[Row],Column:List[str]>, List[Row], Column]
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_lesser
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_equals
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_greater
+Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]

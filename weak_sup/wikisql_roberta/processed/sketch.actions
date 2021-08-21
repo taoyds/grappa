@@ -1,0 +1,6 @@
+@start@ -> Number&Number -> [<List[Row]:Number>, List[Row]]&<List[Row]:Number> -> count&List[Row] -> #PH#
+@start@ -> List[str]&List[str] -> [<List[Row],Column:List[str]>, List[Row], Column]&<List[Row],Column:List[str]> -> select&List[Row] -> #PH#&Column -> #PH#
+@start@ -> Number&Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]&<List[Row],NumberColumn:Number> -> average&List[Row] -> #PH#&NumberColumn -> #PH#
+@start@ -> Number&Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]&<List[Row],NumberColumn:Number> -> max&List[Row] -> #PH#&NumberColumn -> #PH#
+@start@ -> Number&Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]&<List[Row],NumberColumn:Number> -> min&List[Row] -> #PH#&NumberColumn -> #PH#
+@start@ -> Number&Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]&<List[Row],NumberColumn:Number> -> sum&List[Row] -> #PH#&NumberColumn -> #PH#
