@@ -23,7 +23,7 @@ The results in the paper were obtained via the config "4gpu_run_grappa_V100".
 
 To adapt the default config, you need to specify the path of grappa, by changing the respective variable "roberta_path".
 
-## 3. Train the parser
+### 3. Train the parser
 
     ./run_scripts/run_2gpu_grappa.sh
 
