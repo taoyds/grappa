@@ -1,0 +1,16 @@
+torch
+torchvision
+wandb
+tqdm
+boto3
+requests
+regex
+sacremoses
+matplotlib
+pymysql
+sqlparse
+nltk
+simplediff
+progressbar
+records==0.5.2
+babel
