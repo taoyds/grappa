@@ -15,3 +15,5 @@ If you use GraPPa in your work, please cite it as follows:
   url={https://arxiv.org/abs/2009.13845}
 }
 ```
+
+All datasets in this repository are released under the [CC BY 4.0 International license](https://creativecommons.org/licenses/by/4.0/legalcode). All source files in this repository are released under the Apache 2.0 license.
