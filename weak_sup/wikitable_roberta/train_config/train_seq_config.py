@@ -131,6 +131,6 @@ configs["2_gpu_grappa_v100"] = Config(
     node_rank=0,
     port="8006",
 
-    batch_size=8,
+    batch_size=16,
 )
 

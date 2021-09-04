@@ -1,0 +1,51 @@
+str -> #PH#
+Date -> #PH#
+Column -> #PH#
+Number -> #PH#
+@start@ -> Date
+List[Row] -> #PH#
+<Row:Row> -> next
+@start@ -> Number
+DateColumn -> #PH#
+@start@ -> List[str]
+StringColumn -> #PH#
+NumberColumn -> #PH#
+<Row:Row> -> previous
+Row -> [<Row:Row>, Row]
+<List[Row]:Row> -> last
+ComparableColumn -> #PH#
+<List[Row]:Row> -> first
+<List[Row]:Number> -> count
+<Row,Column:List[str]> -> select
+Row -> [<List[Row]:Row>, List[Row]]
+<List[Row],Column:List[str]> -> mode
+<Row,Row,NumberColumn:Number> -> diff
+<List[Row],NumberColumn:Number> -> min
+<List[Row],NumberColumn:Number> -> max
+<List[Row],NumberColumn:Number> -> sum
+<List[Row],Column:List[str]> -> select
+Number -> [<List[Row]:Number>, List[Row]]
+<List[Row],ComparableColumn:Row> -> argmin
+<List[Row],NumberColumn:Number> -> average
+<List[Row],ComparableColumn:Row> -> argmax
+<List[Row],List[Row]:List[Row]> -> conjunction
+<List[Row],List[Row]:List[Row]> -> disjunction
+List[str] -> [<Row,Column:List[str]>, Row, Column]
+<List[Row],StringColumn,str:List[Row]> -> filter_in
+<List[Row],StringColumn,str:List[Row]> -> filter_not_in
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_equals
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_lesser
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_greater
+List[str] -> [<List[Row],Column:List[str]>, List[Row], Column]
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_not_equals
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_equals
+Number -> [<Row,Row,NumberColumn:Number>, Row, Row, NumberColumn]
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_lesser
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_greater
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_lesser_equals
+<List[Row],DateColumn,Date:List[Row]> -> filter_date_greater_equals
+Number -> [<List[Row],NumberColumn:Number>, List[Row], NumberColumn]
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_not_equals
+Row -> [<List[Row],ComparableColumn:Row>, List[Row], ComparableColumn]
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_lesser_equals
+<List[Row],NumberColumn,Number:List[Row]> -> filter_number_greater_equals
