@@ -20,7 +20,7 @@ processed
 
 The main config file is `train_config/`, which contains a set of model configurations specified via instantiations of 
 the Config object. We will use "2gpu_run_grappa_1080" for example. 
-The results in the paper were obtained via the config "4gpu_run_grappa_V100".
+The results in the paper were obtained via the config "3gpu_run_grappa_V100".
 
 To adapt the default config, you need to specify the path of grappa, by changing the respective variable "roberta_path".
 
